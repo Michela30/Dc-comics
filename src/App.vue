@@ -29,7 +29,7 @@ import FooterComponent from './components/FooterComponent.vue';
     <MainComponent/>
 
     <FooterComponent/>
-    
+
   </div>
 </template>
 
@@ -38,6 +38,7 @@ import FooterComponent from './components/FooterComponent.vue';
 
 <style lang="scss">
 @use 'assets/scss/main.scss';
+
 
 
 
