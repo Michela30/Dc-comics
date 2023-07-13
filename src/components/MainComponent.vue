@@ -95,6 +95,10 @@ main{
 .main-bottom{
     background-color: $main-bg-color;
     height: 120px;
+
+    >*{
+        padding: 40px 20px;
+    }
 }
 
 .row_card{
@@ -102,7 +106,6 @@ main{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 35px;
 
     .card{
         width: calc(100% / 5);
@@ -122,7 +125,7 @@ main{
         span{
             text-transform: uppercase;
             font-size: 0.6em;
-            line-height: 35px;
+            line-height: 40px;
             margin-left: 0;
         }
     }

@@ -4,9 +4,23 @@
    export default {
     data() {
       return{
-
+        headerLinks: [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ],
       }
     },
+    methods: {
+        
+    }
     
   }
 </script>
@@ -25,62 +39,21 @@
               <!-- questi link saranno ciclati tramite dat() -->
               <div class="links">
                   <ul>
-                    <li>
+                    <li v-for="(singleLink, i) in headerLinks">  
                         <a href="#">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            link
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            link
+                            {{singleLink}}
                         </a>
                     </li>
                   </ul>
               </div>
+
           </div>
+
         </div>
-      </header>
+    </header>
 </template>
+
+
 
 <style lang="scss" scoped>
 @use '../assets/scss/variables.scss' as *;
@@ -111,7 +84,7 @@ ul{
 
     li{
         display: inline-block;
-        padding: 0 10px;
+        padding: 0 5px;
     }
     a{
         color: black;
@@ -119,9 +92,8 @@ ul{
         text-transform: uppercase;
         font-weight: bold;
     }
-    &a.active{
+    a:hover{
         color: $color-link;
-        border-bottom: 2px solid $color-link;
     }
 }
 

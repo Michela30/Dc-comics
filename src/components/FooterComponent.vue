@@ -238,48 +238,49 @@
 
 footer{
     height: 250px;
-    @include footer-debug
+    background-image: url(../assets/img/footer-bg.jpg);
 }
 
 .footer_row{
     display: flex;
     align-items: center;
-}
-
-.lists{
-    display: flex;
-}
-
-.firstlist{
-    margin-left: 20px;
-}
-
-ul{
-    padding: 0 15px;
-    h4{
-        text-transform: uppercase;
-        color: white;
-        padding-bottom: 5px;
+    
+    .lists{
+        display: flex;
     }
     
-    li{
-        list-style-type: none;
-        font-size: 0.7em;
-
-        a{
-            color: #555555;
+    .firstlist{
+        margin-left: 30px;
+    }
+    
+    ul{
+        padding: 0 15px;
+        h4{
+            text-transform: uppercase;
+            color: white;
+            padding-bottom: 5px;
+        }
+        
+        li{
+            list-style-type: none;
+            font-size: 0.7em;
+    
+            a{
+                color: #555555;
+                text-decoration: none;
+            }
         }
     }
-}
-
-.logo-big{
-    height: 250px;
-    width: 350px;
-
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    
+    .logo-big{
+        height: 250px;
+        width: 400px;
+    
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
 

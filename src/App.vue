@@ -42,5 +42,4 @@ import FooterComponent from './components/FooterComponent.vue';
 
 
 
-
 </style>
