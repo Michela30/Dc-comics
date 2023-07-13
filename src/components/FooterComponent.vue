@@ -4,7 +4,119 @@
    export default {
     data() {
       return{
+        linkListUno: [
+            {
+                nome: 'Characters',
+                link: '',
+            },
+            {
+                nome: 'Comics',
+                link: '',
+            },
+            {
+                nome: 'Movies',
+                link: '',
+            },
+            {
+                nome: 'Tv',
+                link: '',
+            },
+            {
+                nome: 'Games',
+                link: '',
+            },
+            {
+                nome: 'Collectibles',
+                link: '',
+            },
+            {
+                nome: 'Videos',
+                link: '',
+            },
+            {
+                nome: 'News',
+                link: '',
+            },
 
+        ],
+        linkListDue: [
+            {
+                nome: 'Shop DC',
+                link: '',
+            },
+            {
+                nome: 'Shop DC Collectibles',
+                link: '',
+            },
+        ],
+        linkListTre: [
+            {
+                nome: 'Terms of Use',
+                link: '',
+            },
+            {
+                nome: 'Privacy policy',
+                link: '',
+            },
+            {
+                nome: 'Ad Choices',
+                link: '',
+            },
+            {
+                nome: 'Advertising',
+                link: '',
+            },
+            {
+                nome: 'Jobs',
+                link: '',
+            },
+            {
+                nome: 'Subscriptions',
+                link: '',
+            },
+            {
+                nome: 'Talent Workshop',
+                link: '',
+            },
+            {
+                nome: 'CPSC Cetficates',
+                link: '',
+            },
+            {
+                nome: 'Rating',
+                link: '',
+            },
+            {
+                nome: 'Shop Help',
+                link: '',
+            },
+            {
+                nome: 'Contact Us',
+                link: '',
+            },
+        ],
+        linkListQattro: [
+        {
+                nome: 'DC',
+                link: '',
+            },
+            {
+                nome: 'MAD Magazine',
+                link: '',
+            },
+            {
+                nome: 'DC Kids',
+                link: '',
+            },
+            {
+                nome: 'DC Universe',
+                link: '',
+            },
+            {
+                nome: 'DC Power Visa',
+                link: '',
+            },
+        ]
       }
     },
     
@@ -24,39 +136,9 @@
                             <h4>
                                 dc comedies
                             </h4>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
+                            <li v-for="links in linkListUno">
+                                <a href="#" >
+                                    {{links.nome}}
                                 </a>
                             </li>
                         </ul>
@@ -66,14 +148,9 @@
                                <h4>
                                    shop
                                </h4>
-                               <li>
+                               <li v-for="links in linkListDue">
                                    <a href="#">
-                                       link
-                                   </a>
-                               </li>
-                               <li>
-                                   <a href="#">
-                                       link
+                                    {{links.nome}}
                                    </a>
                                </li>
                            </ul>
@@ -87,59 +164,9 @@
                             <h4>
                                 dc
                             </h4>
-                            <li>
+                            <li v-for="links in linkListTre">
                                 <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
+                                    {{ links.nome }}
                                 </a>
                             </li>
                         </ul>
@@ -151,29 +178,9 @@
                             <h4>
                                 sites
                             </h4>
-                            <li>
+                            <li v-for="links in linkListTre">
                                 <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    link
+                                    {{ links.nome }}
                                 </a>
                             </li>
                         </ul>
@@ -250,11 +257,11 @@ footer{
     }
     
     .firstlist{
-        margin-left: 30px;
+        margin-left: 70px;
     }
     
     ul{
-        padding: 0 15px;
+        padding: 10px 15px;
         h4{
             text-transform: uppercase;
             color: white;
