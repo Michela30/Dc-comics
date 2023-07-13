@@ -189,10 +189,45 @@
         </div>
         
         <div class="footer-bottom">
-                <div class="main-container">
-                    footer
-                </div>
+            <div class="main-container">
 
+                <div class="footer-bottom-row">
+
+                    
+                    <div class="footer-button">
+                        
+                        <a href="#">
+                            <button>
+                                SIGN-UP NOW!
+                            </button>
+                        </a>
+                            
+                    </div>
+    
+                    <div class="footer-icons">
+                        <h4>
+                            follow us
+                        </h4>
+
+                        <span class="icon-circle">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="icon-circle">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span class="icon-circle">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="icon-circle">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        <span class="icon-circle">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                    </div>
+                
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -251,5 +286,52 @@ ul{
 .footer-bottom{
     height: 85px;
     background-color: $footer-bg-color;
+    
+    .footer-bottom-row{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-button{
+    margin-left: 0;
+    padding: 12px 0;
+    a{
+        text-decoration: none;
+
+        button{
+            background-color: transparent;
+            color: white;
+            font-size: 0.7em;
+            border: none;
+            padding: 10px;
+            border: 2px solid $border-button;
+        }
+    }
+}
+
+.footer-icons{
+    margin-right: 0;
+    padding: 20px 0;
+    display: flex;
+
+    h4{
+        text-transform: uppercase;
+        color: $color-link;
+        line-height: 25px;
+    }
+    .icon-circle{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #797979;
+        text-align: center;
+        margin-left: 10px;
+
+        i{
+            line-height: 25px;
+            color: $footer-bg-color;
+        }
+    }
 }
 </style>
