@@ -31,43 +31,43 @@
                 <div class="row_card">
            
                     <div class="card">
-                        <div>
-                            image
+                        <div class="card-img-container">
+                            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
                         </div>
                         <span>
-                            text
+                            digital comics
                         </span>
                     </div>
                     <div class="card">
-                        <div>
-                            image
+                        <div class="card-img-container">
+                            <img src="../assets/img/buy-comics-merchandise.png" alt="">
                         </div>
                         <span>
-                            text
+                            dc merchandise
                         </span>
                     </div>
                     <div class="card">
-                        <div>
-                            image
+                        <div class="card-img-container">
+                            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
                         </div>
                         <span>
-                            text
+                            subscription
                         </span>
                     </div>
                     <div class="card">
-                        <div>
-                            image
+                        <div class="card-img-container">
+                            <img src="../assets/img/buy-comics-shop-locator.png" alt="">
                         </div>
                         <span>
-                            text
+                            comic shop locator
                         </span>
                     </div>
                     <div class="card">
-                        <div>
-                            image
+                        <div class="card-img-container">
+                            <img src="../assets/img/buy-dc-power-visa.svg" alt="">
                         </div>
                         <span>
-                            text
+                            dc power visa
                         </span>
                     </div>
                 </div>
@@ -101,14 +101,30 @@ main{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
     padding-top: 35px;
 
     .card{
         width: calc(100% / 5);
         display: flex;
-    }
-    >* {
-        padding: 0 15px;
+
+        .card-img-container{
+            width: 40px;
+            height: 40px;
+            
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        span{
+            text-transform: uppercase;
+            font-size: 0.6em;
+            line-height: 35px;
+            margin-left: 0;
+        }
     }
     
 }

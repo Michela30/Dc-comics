@@ -296,18 +296,19 @@ ul{
 .footer-button{
     margin-left: 0;
     padding: 12px 0;
-    a{
-        text-decoration: none;
+        a{
+            text-decoration: none;
 
-        button{
-            background-color: transparent;
-            color: white;
-            font-size: 0.7em;
-            border: none;
-            padding: 10px;
-            border: 2px solid $border-button;
+            button{
+                background-color: transparent;
+                color: white;
+                font-size: 0.7em;
+                border: none;
+                padding: 10px;
+                border: 2px solid $border-button;
+                cursor: pointer;
+            }
         }
-    }
 }
 
 .footer-icons{
