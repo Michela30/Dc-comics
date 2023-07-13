@@ -15,7 +15,7 @@
 <template>
     
     <header>
-        <div class="container">
+        <div class="header-container">
     
           <div class="header-top">
               <div class="small-logo-container">
@@ -89,13 +89,15 @@ header{
     height: 70px;
     @include header-debug;
 }
-
+.header-container{
+    max-width: 1100px;
+    padding: 10px 0;
+}
 .header-top{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    line-height: 40px;
 }
 
 .small-logo-container{
@@ -108,7 +110,7 @@ header{
 }
 
 ul{
-    font-size: 0.7em;
+    font-size: 0.6em;
 
     li{
         display: inline-block;
@@ -118,6 +120,7 @@ ul{
         color: black;
         text-decoration: none;
         text-transform: uppercase;
+        font-weight: bold;
     }
     &a.active{
         color: $color-link;
