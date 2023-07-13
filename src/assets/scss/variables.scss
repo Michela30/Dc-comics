@@ -1,0 +1,22 @@
+$main-bg-color: #0282F9;
+$footer-bg-color: #303030;
+$border-button: #057EEE;
+$color-link: #0282F9;
+
+
+@mixin body-debug{
+    background-color: black;
+}
+
+@mixin header-debug{
+    background-color: bisque;
+    color: blue;
+}
+
+@mixin main-debug{
+    background-color: blue;
+}
+
+@mixin footer-debug{
+    background-color: plum;
+}
