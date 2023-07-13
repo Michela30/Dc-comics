@@ -15,7 +15,7 @@
 <template>
     
     <header>
-        <div class="header-container">
+        <div class="container">
     
           <div class="header-top">
               <div class="small-logo-container">
@@ -87,11 +87,8 @@
 
 header{
     height: 70px;
-    @include header-debug;
-}
-.header-container{
-    max-width: 1100px;
     padding: 10px 0;
+    @include header-debug;
 }
 .header-top{
     display: flex;
