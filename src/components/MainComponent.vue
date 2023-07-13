@@ -4,7 +4,29 @@
    export default {
     data() {
       return{
+        cardContent:[
+            {
+                image: 'buy-comics-digital-comics.png',
+                text: 'Digital Comics'
+            },
+            {
+                image: 'buy-comics-merchandise.png',
+                text: 'Dc Merchandise'
+            },
+            {
+                image: 'buy-comics-subscriptions.png',
+                text: 'Subscription'
+            },
+            {
+                image: 'buy-comics-shop-locator.png',
+                text: 'Comic Shop Locator'
+            },
+            {
+                image: 'buy-dc-power-visa.svg',
+                text: 'Dc Power Visa'
+            },
 
+        ]
       }
     },
     
@@ -35,7 +57,7 @@
                             <img src="../assets/img/buy-comics-digital-comics.png" alt="">
                         </div>
                         <span>
-                            digital comics
+                            Digital Comics
                         </span>
                     </div>
                     <div class="card">
@@ -70,7 +92,7 @@
                             dc power visa
                         </span>
                     </div>
-                </div>
+                </div> 
 
             </div>
         </section>
