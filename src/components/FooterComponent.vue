@@ -116,9 +116,36 @@
                 nome: 'DC Power Visa',
                 link: '',
             },
+        ],
+        iconImage: [
+            {
+                image: 'footer-fb.png',
+                link: ''
+            },
+            {
+                image: 'footer-twitterNew.png',
+                link: ''
+            },
+            {
+                image: 'footer-youtubeNew.png',
+                link: ''
+            },
+            {
+                image: 'footer-pinterestNew.png',
+                link: ''
+            },
+            {
+                image: 'footer-periscopeNew.png',
+                link: ''
+            },
         ]
       }
     },
+    methods: {
+        getImagePath: function(image){
+            return new URL (image, import.meta.url).href;
+        }
+    }
     
   }
 </script>
@@ -201,7 +228,7 @@
                 <div class="footer-bottom-row">
 
                     
-                    <div class="footer-button">
+                    <div class="footer-left">
                         
                         <a href="#">
                             <button>
@@ -216,20 +243,12 @@
                             follow us
                         </h4>
 
-                        <span class="icon-circle">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </span>
-                        <span class="icon-circle">
-                            <i class="fa-brands fa-twitter"></i>
-                        </span>
-                        <span class="icon-circle">
-                            <i class="fa-brands fa-youtube"></i>
-                        </span>
-                        <span class="icon-circle">
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </span>
-                        <span class="icon-circle">
-                            <i class="fa-solid fa-location-dot"></i>
+                        <span class="icon-circle" v-for="icon in iconImage">
+                            
+                            <a href="">
+                                <img :src="getImagePath(`../assets/img/${icon.image}`)">
+                            </a>
+
                         </span>
                     </div>
                 
@@ -301,7 +320,7 @@ footer{
     }
 }
 
-.footer-button{
+.footer-left{
     margin-left: 0;
     padding: 12px 0;
         a{
@@ -332,14 +351,10 @@ footer{
     .icon-circle{
         width: 25px;
         height: 25px;
-        border-radius: 50%;
-        background-color: #797979;
-        text-align: center;
         margin-left: 10px;
 
-        i{
-            line-height: 25px;
-            color: $footer-bg-color;
+        img{
+           width: 100%;
         }
     }
 }
