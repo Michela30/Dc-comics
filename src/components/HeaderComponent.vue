@@ -70,12 +70,13 @@
               <!-- questi link saranno ciclati tramite dat() -->
               <div class="links">
                   <ul>
-                    <li v-for="(singleLink, i) in headerLinks">  
-                        <a href="#">
-                            {{singleLink.nome}}
-                        </a>
+                    <li v-for="(singleLink, i) in headerLinks">
+                        <button class="link-button">
+                            <a href="#">
+                                {{singleLink.nome}}
+                            </a>
+                        </button>
                     </li>
-                    <hr>
                   </ul>
               </div>
 
@@ -90,20 +91,20 @@
 <style lang="scss" scoped>
 @use '../assets/scss/variables.scss' as *;
 
-header{
+header {
     height: 70px;
     padding: 10px 0;
     background-color: white;
     position: relative;
 }
-.header-top{
+.header-top {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.small-logo-container{
+.small-logo-container {
     height: 50px;
     width: 50px;
     
@@ -112,32 +113,30 @@ header{
     }
 }
 
-ul{
+ul {
     font-size: 0.6em;
     
-    li{
+    li {
         display: inline-block;
         padding: 0 5px;
-        
-        a:hover{
-            color: $color-link;
-            a:hover hr{
-                display: block;
-            }
+
+        button {
+            background-color: transparent;
+            border: none;
         }
-    }
-    hr{
-        position: absolute;
-        bottom: 0px;
-        width: 5%;
-        border: 2px solid $color-link;
-        display: none;
-    }
-    a{
-        color: black;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
+        
+        a{
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        button a:hover {
+            border-bottom: 4px solid $color-link;
+            color: $color-link;
+            padding: 24px 0;
+        }
     }
 }
 

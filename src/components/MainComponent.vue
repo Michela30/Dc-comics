@@ -198,11 +198,11 @@ import CardMain from '../components/CardMain.vue'
         z-index: 2;
         left: 300px;
         bottom: -15px;
-        padding: 10px;
+        padding: 10px 20px;
         background-color: $main-bg-color;
         color: white;
         text-transform: uppercase;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
@@ -231,9 +231,9 @@ import CardMain from '../components/CardMain.vue'
 button {
     margin-top: 40px;
     background-color: $main-bg-color;
-    font-size: 0.6em;
+    font-size: 0.7em;
     border: none;
-    padding: 5px 25px;
+    padding: 5px 30px;
     cursor: pointer;
 
     a {
@@ -266,8 +266,9 @@ button {
         }
         span {
             text-transform: uppercase;
-            font-size: 0.6em;
+            font-size: 0.7em;
             line-height: 40px;
+            color: white;
             margin-left: 0;
         }
     }

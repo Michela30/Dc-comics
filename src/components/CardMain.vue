@@ -83,7 +83,7 @@
 
             h5 {
                 text-transform: uppercase;
-                font-size: 0.6em;
+                font-size: 0.7em;
                 color: white;
                 padding-top: 10px;
             }

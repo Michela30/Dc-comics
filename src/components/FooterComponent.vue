@@ -296,7 +296,11 @@ footer{
             a {
                 color: #555555;
                 text-decoration: none;
-
+            }
+            
+            > a:hover{
+                text-decoration: underline;
+                color: $color-link;
             }
         }
     }
