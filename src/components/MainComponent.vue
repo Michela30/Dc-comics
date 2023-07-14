@@ -29,6 +29,11 @@
         ]
       }
     },
+    methods: {
+        getImagePath: function(image){
+            return new URL (image, import.meta.url).href;
+        }
+    }
     
   }
 </script>
@@ -52,46 +57,17 @@
             <div class="main-container">
                 <div class="row_card">
            
-                    <div class="card">
+                    <div class="card" v-for="(singleElement,i) in cardContent" :key="i">
+
                         <div class="card-img-container">
-                            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                            <img :src="getImagePath(`../assets/img/${singleElement.image}`)" alt="">
                         </div>
                         <span>
-                            Digital Comics
+                            {{singleElement.text}}
                         </span>
+
                     </div>
-                    <div class="card">
-                        <div class="card-img-container">
-                            <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                        </div>
-                        <span>
-                            dc merchandise
-                        </span>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-container">
-                            <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                        </div>
-                        <span>
-                            subscription
-                        </span>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-container">
-                            <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                        </div>
-                        <span>
-                            comic shop locator
-                        </span>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-container">
-                            <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                        </div>
-                        <span>
-                            dc power visa
-                        </span>
-                    </div>
+
                 </div> 
 
             </div>

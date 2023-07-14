@@ -5,16 +5,47 @@
     data() {
       return{
         headerLinks: [
-            'characters',
-            'comics',
-            'movies',
-            'tv',
-            'games',
-            'collectibles',
-            'videos',
-            'fans',
-            'news',
-            'shop'
+        {
+                nome: 'Characters',
+                link: '',
+            },
+            {
+                nome: 'Comics',
+                link: '',
+            },
+            {
+                nome: 'Movies',
+                link: '',
+            },
+            {
+                nome: 'Tv',
+                link: '',
+            },
+            {
+                nome: 'Games',
+                link: '',
+            },
+            {
+                nome: 'Collectibles',
+                link: '',
+            },
+            {
+                nome: 'Videos',
+                link: '',
+            },
+            {
+                nome: 'Fans',
+                link: '',
+            },
+            {
+                nome: 'News',
+                link: '',
+            },
+            {
+                nome: 'Shop',
+                link: '',
+            },
+
         ],
       }
     },
@@ -41,9 +72,10 @@
                   <ul>
                     <li v-for="(singleLink, i) in headerLinks">  
                         <a href="#">
-                            {{singleLink}}
+                            {{singleLink.nome}}
                         </a>
                     </li>
+                    <hr>
                   </ul>
               </div>
 
@@ -62,6 +94,7 @@ header{
     height: 70px;
     padding: 10px 0;
     @include header-debug;
+    position: relative;
 }
 .header-top{
     display: flex;
@@ -81,19 +114,30 @@ header{
 
 ul{
     font-size: 0.6em;
-
+    
     li{
         display: inline-block;
         padding: 0 5px;
+        
+        a:hover{
+            color: $color-link;
+            a:hover hr{
+                display: block;
+            }
+        }
+    }
+    hr{
+        position: absolute;
+        bottom: 0px;
+        width: 5%;
+        border: 2px solid $color-link;
+        display: none;
     }
     a{
         color: black;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
-    }
-    a:hover{
-        color: $color-link;
     }
 }
 
