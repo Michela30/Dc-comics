@@ -59,7 +59,7 @@
                 text-transform: uppercase;
                 font-size: 0.6em;
                 color: white;
-                padding-top: 5px;
+                padding-top: 10px;
             }
 
         }

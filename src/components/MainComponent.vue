@@ -120,12 +120,15 @@ import CardMain from '../components/CardMain.vue'
 <template>
     <main>
         <section class="jumbotron">
-
+            
+            <h3 class="current-series">
+                current series
+            </h3>
+        
         </section>
+        
+        
 
-        <div>
-            elemento in absolute
-        </div>
         <section>
 
             <div class="main-top">
@@ -186,10 +189,24 @@ import CardMain from '../components/CardMain.vue'
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    .current-series {
+        position: absolute;
+        z-index: 2;
+        left: 150px;
+        bottom: -15px;
+        padding: 10px;
+        background-color: $main-bg-color;
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.8em;
+    }
 }
+
 .main-top {
     background-color: #1C1C1C;
     padding: 15px 0 0;
+
 
     .cards-box{
         display: flex;
