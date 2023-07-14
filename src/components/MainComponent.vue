@@ -108,6 +108,7 @@ import CardMain from '../components/CardMain.vue'
         getImagePath: function(image){
             return new URL (image, import.meta.url).href;
         }
+
     },
     components: {
         CardMain
@@ -119,6 +120,7 @@ import CardMain from '../components/CardMain.vue'
 
 <template>
     <main>
+
         <section class="jumbotron">
             
             <h3 class="current-series">
@@ -126,8 +128,6 @@ import CardMain from '../components/CardMain.vue'
             </h3>
         
         </section>
-        
-        
 
         <section>
 
@@ -139,6 +139,7 @@ import CardMain from '../components/CardMain.vue'
                         <CardMain v-for="(singleCard,i) in cardsObject" :key="i"
     
                         :cardThumb="singleCard.thumb"
+                        :cardPrice="singleCard.price"
                         :cardSeries="singleCard.series"/>
     
                         <button>
@@ -173,11 +174,13 @@ import CardMain from '../components/CardMain.vue'
 
             </div>
         </section>
-        
-        
+
     </main>
 
 </template>
+
+
+
 
 <style lang="scss" scoped>
 @use '../assets/scss/variables.scss' as *;
@@ -193,7 +196,7 @@ import CardMain from '../components/CardMain.vue'
     .current-series {
         position: absolute;
         z-index: 2;
-        left: 150px;
+        left: 300px;
         bottom: -15px;
         padding: 10px;
         background-color: $main-bg-color;

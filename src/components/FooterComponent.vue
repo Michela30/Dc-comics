@@ -259,6 +259,8 @@
 
 </template>
 
+
+
 <style lang="scss" scoped>
 @use '../assets/scss/variables.scss' as *;
 
@@ -267,42 +269,43 @@ footer{
     background-image: url(../assets/img/footer-bg.jpg);
 }
 
-.footer_row{
+.footer_row {
     display: flex;
     align-items: center;
     
-    .lists{
+    .lists {
         display: flex;
+        .firstlist {
+            margin-left: 70px;
+        }
     }
     
-    .firstlist{
-        margin-left: 70px;
-    }
     
-    ul{
+    ul {
         padding: 10px 15px;
-        h4{
+        h4 {
             text-transform: uppercase;
             color: white;
             padding-bottom: 5px;
         }
         
-        li{
+        li {
             list-style-type: none;
             font-size: 0.7em;
-    
-            a{
+
+            a {
                 color: #555555;
                 text-decoration: none;
+
             }
         }
     }
     
-    .logo-big{
+    .logo-big {
         height: 250px;
         width: 400px;
     
-        img{
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -320,13 +323,13 @@ footer{
     }
 }
 
-.footer-left{
+.footer-left {
     margin-left: 0;
     padding: 12px 0;
-        a{
+        a {
             text-decoration: none;
 
-            button{
+            button {
                 background-color: transparent;
                 color: white;
                 font-size: 0.7em;
@@ -338,22 +341,22 @@ footer{
         }
 }
 
-.footer-icons{
+.footer-icons {
     margin-right: 0;
     padding: 20px 0;
     display: flex;
 
-    h4{
+    h4 {
         text-transform: uppercase;
         color: $color-link;
         line-height: 25px;
     }
-    .icon-circle{
+    .icon-circle {
         width: 25px;
         height: 25px;
         margin-left: 10px;
 
-        img{
+        img {
            width: 100%;
         }
     }

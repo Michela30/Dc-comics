@@ -8,11 +8,16 @@
       }
     },
     methods: {
-       
+       formatNumber(n){
+        const splicedNumber = n.substring(1);
+        const formattedNumber = parseFloat(splicedNumber);
+        return formattedNumber
+       }
     },
     props: {
         cardThumb: String,
-        cardSeries: String
+        cardSeries: String,
+        cardPrice: String
     }
     
   }
@@ -23,16 +28,23 @@
  
     <div class="single-card">
         <div class="img-card-box">
+
+            <span class="price-ticket" :class="{ 'sale' : formatNumber(cardPrice) < 5}">
+                {{cardPrice}}
+            </span>
+
             <img :src="cardThumb" alt="">
         </div>
+
         <h5>
             {{cardSeries}}
         </h5>
+
     </div>
 
-      
-
 </template>
+
+
 
 <style lang="scss" scoped>
 @use '../assets/scss/variables.scss' as *;
@@ -43,7 +55,21 @@
             margin-top: 20px;
             margin-bottom: 20px;
             height: 120px;
-            background-color: lightcoral;
+            position: relative;
+
+            .price-ticket {
+                position: absolute;
+                background-color: yellow;
+                bottom: 0;
+                font-size: 0.7em;
+                font-weight: bold;
+                padding: 0 5px;
+
+                &.sale {
+                    background-color: green;
+                    color: white;
+                }
+            }
 
             .img-card-box {
                 height: 120px;
