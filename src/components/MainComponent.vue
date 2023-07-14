@@ -137,13 +137,15 @@ import CardMain from '../components/CardMain.vue'
     
                         :cardThumb="singleCard.thumb"
                         :cardSeries="singleCard.series"/>
+    
+                        <button>
+                            <a href="#">
+                                LOAD MORE
+                            </a>
+                        </button>
+                                            
                     </div>
 
-
-                    <button>
-                        button
-                    </button>
-                    
                 </div>
             </div>
             
@@ -186,7 +188,8 @@ import CardMain from '../components/CardMain.vue'
     background-repeat: no-repeat;
 }
 .main-top {
-    background-color: black;
+    background-color: #1C1C1C;
+    padding: 15px 0 0;
 
     .cards-box{
         display: flex;
@@ -202,6 +205,21 @@ import CardMain from '../components/CardMain.vue'
 
     >* {
         padding: 40px 20px;
+    }
+}
+
+button {
+    margin-top: 40px;
+    background-color: $main-bg-color;
+    font-size: 0.6em;
+    border: none;
+    padding: 5px 25px;
+    cursor: pointer;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
     }
 }
 

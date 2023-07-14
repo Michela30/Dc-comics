@@ -57,7 +57,7 @@
 
             h5 {
                 text-transform: uppercase;
-                font-size: 0.7em;
+                font-size: 0.6em;
                 color: white;
                 padding-top: 5px;
             }
