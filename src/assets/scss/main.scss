@@ -1,15 +1,15 @@
 @use 'variables.scss' as *;
 
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+.container {
     max-width: 1100px;
 }
-.main-container{
+.main-container {
     max-width: 800px;
     padding: 10px 0;
 }

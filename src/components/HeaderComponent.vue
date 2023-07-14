@@ -93,7 +93,7 @@
 header{
     height: 70px;
     padding: 10px 0;
-    @include header-debug;
+    background-color: white;
     position: relative;
 }
 .header-top{

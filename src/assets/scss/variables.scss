@@ -4,19 +4,19 @@ $border-button: #057EEE;
 $color-link: #0282F9;
 
 
-@mixin body-debug{
+@mixin body-debug {
     background-color: black;
 }
 
-@mixin header-debug{
+@mixin header-debug {
     background-color: bisque;
     color: blue;
 }
 
-@mixin main-debug{
+@mixin main-debug {
     background-color: blue;
 }
 
-@mixin footer-debug{
+@mixin footer-debug {
     background-color: plum;
 }
