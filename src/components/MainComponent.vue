@@ -159,15 +159,48 @@ import CardMain from '../components/CardMain.vue'
             <div class="main-container">
                 <div class="row_service">
            
-                    <div class="service" v-for="(singleElement,i) in service" :key="i">
+                    <div class="service">
 
                         <div class="service-img-container">
-                            <!-- <img src="../../public/buy-comics-digital-comics.png" alt=""> -->
-                            <img :src="singleElement.image" alt="">
+                            <img src="../../public/buy-comics-digital-comics.png" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
                         </div>
                         <span>
-                            {{singleElement.text}}
+                            Digital Comics
                         </span>
+
+                        <div class="service-img-container">
+                            <img src="../../public/buy-comics-merchandise.png" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
+                        </div>
+                        <span>
+                            Dc Merchandise
+                        </span>
+
+                        <div class="service-img-container">
+                            <img src="../../public/buy-comics-subscriptions.png" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
+                        </div>
+                        <span>
+                            Subscription
+                        </span>
+                        
+                        <div class="service-img-container">
+                            <img src="../../public/buy-comics-shop-locator.png" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
+                        </div>
+                        <span>
+                            Shop Locator
+                        </span>
+
+                        <div class="service-img-container">
+                            <img src="../../public/buy-dc-power-visa.svg" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
+                        </div>
+                        <span>
+                            Dc Power Visa
+                        </span>
+
 
                     </div>
 
