@@ -243,12 +243,30 @@
                             follow us
                         </h4>
 
-                        <span class="icon-circle" v-for="icon in iconImage">
-                            
+                        <span class="icon-circle">
                             <a href="">
-                                <img :src="getImagePath(`../assets/img/${icon.image}`)">
+                                <img src="../assets/img/footer-fb.png">
                             </a>
-
+                        </span>
+                        <span class="icon-circle">
+                            <a href="">
+                                <img src="../assets/img/footer-periscopeNew.png">
+                            </a>
+                        </span>
+                        <span class="icon-circle">
+                            <a href="">
+                                <img src="../assets/img/footer-pinterestNew.png">
+                            </a>
+                        </span>
+                        <span class="icon-circle">
+                            <a href="">
+                                <img src="../assets/img/footer-twitterNew.png">
+                            </a>
+                        </span>
+                        <span class="icon-circle">
+                            <a href="">
+                                <img src="../assets/img/footer-youtubeNew.png">
+                            </a>
                         </span>
                     </div>
                 

@@ -284,8 +284,8 @@ button {
     align-items: center;
 
     .service {
-        width: calc(100% / 5);
         display: flex;
+        padding: 10px;
 
         .service-img-container {
             width: 40px;
