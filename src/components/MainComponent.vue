@@ -162,7 +162,7 @@ import CardMain from '../components/CardMain.vue'
                     <div class="service">
 
                         <div class="service-img-container">
-                            <img src="../../public/buy-comics-digital-comics.png" alt="">
+                            <img src="/buy-comics-digital-comics.png" alt="">
                             <!-- <img :src="singleElement.image" alt=""> -->
                         </div>
                         <span>
@@ -170,7 +170,7 @@ import CardMain from '../components/CardMain.vue'
                         </span>
 
                         <div class="service-img-container">
-                            <img src="../../public/buy-comics-merchandise.png" alt="">
+                            <img src="/buy-comics-merchandise.png" alt="">
                             <!-- <img :src="singleElement.image" alt=""> -->
                         </div>
                         <span>
@@ -178,7 +178,7 @@ import CardMain from '../components/CardMain.vue'
                         </span>
 
                         <div class="service-img-container">
-                            <img src="../../public/buy-comics-subscriptions.png" alt="">
+                            <img src="/buy-comics-subscriptions.png" alt="">
                             <!-- <img :src="singleElement.image" alt=""> -->
                         </div>
                         <span>
@@ -186,7 +186,7 @@ import CardMain from '../components/CardMain.vue'
                         </span>
                         
                         <div class="service-img-container">
-                            <img src="../../public/buy-comics-shop-locator.png" alt="">
+                            <img src="/buy-comics-shop-locator.png" alt="">
                             <!-- <img :src="singleElement.image" alt=""> -->
                         </div>
                         <span>
@@ -194,7 +194,7 @@ import CardMain from '../components/CardMain.vue'
                         </span>
 
                         <div class="service-img-container">
-                            <img src="../../public/buy-dc-power-visa.svg" alt="">
+                            <img src="/buy-dc-power-visa.svg" alt="">
                             <!-- <img :src="singleElement.image" alt=""> -->
                         </div>
                         <span>
