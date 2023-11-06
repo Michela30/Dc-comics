@@ -162,11 +162,45 @@ import CardMain from '../components/CardMain.vue'
                     <div class="service" v-for="(singleElement,i) in service" :key="i">
 
                         <div class="service-img-container">
-                            <img :src="singleElement.image" alt="">
+                            <img src="../../public/buy-comics-digital-comics.png" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
                         </div>
                         <span>
-                            {{singleElement.text}}
+                            {{singleElement[0].text}}
                         </span>
+
+                        <div class="service-img-container">
+                            <img src="../../public/buy-comics-merchandise.png" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
+                        </div>
+                        <span>
+                            {{singleElement[1].text}}
+                        </span>
+
+                        <div class="service-img-container">
+                            <img src="../../public/buy-comics-subscriptions.png" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
+                        </div>
+                        <span>
+                            {{singleElement[2].text}}
+                        </span>
+                        
+                        <div class="service-img-container">
+                            <img src="../../public/buy-comics-shop-locator.png" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
+                        </div>
+                        <span>
+                            {{singleElement[3].text}}
+                        </span>
+
+                        <div class="service-img-container">
+                            <img src="../../public/buy-dc-power-visa.svg" alt="">
+                            <!-- <img :src="singleElement.image" alt=""> -->
+                        </div>
+                        <span>
+                            {{singleElement[4].text}}
+                        </span>
+
 
                     </div>
 
