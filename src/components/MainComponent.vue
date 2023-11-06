@@ -7,23 +7,23 @@ import CardMain from '../components/CardMain.vue'
       return{
         service:[
             {
-                image: 'buy-comics-digital-comics.png',
+                image: '../../public/buy-comics-digital-comics.png',
                 text: 'Digital Comics'
             },
             {
-                image: 'buy-comics-merchandise.png',
+                image: '../../public/buy-comics-merchandise.png',
                 text: 'Dc Merchandise'
             },
             {
-                image: 'buy-comics-subscriptions.png',
+                image: '../../public/buy-comics-subscriptions.png',
                 text: 'Subscription'
             },
             {
-                image: 'buy-comics-shop-locator.png',
+                image: '../../public/buy-comics-shop-locator.png',
                 text: 'Comic Shop Locator'
             },
             {
-                image: 'buy-dc-power-visa.svg',
+                image: '../../public/buy-dc-power-visa.svg',
                 text: 'Dc Power Visa'
             },
 
@@ -162,7 +162,7 @@ import CardMain from '../components/CardMain.vue'
                     <div class="service" v-for="(singleElement,i) in service" :key="i">
 
                         <div class="service-img-container">
-                            <img :src="getImagePath(`../assets/img/${singleElement.image}`)" alt="">
+                            <img :src="singleElement.image" alt="">
                         </div>
                         <span>
                             {{singleElement.text}}
